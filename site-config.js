@@ -10,6 +10,6 @@
  */
 window.LUNERA_SITE_CONFIG = {
   installerName: 'Lunera_Beta_Setup.exe',
-  localInstallerPath: 'downloads/Lunera%20Beta%20Setup.exe',
+  localInstallerPath: 'downloads/Lunera_Beta_Setup.exe',
   releaseUrl: 'https://github.com/iTheRoken/Lunera.github.io/releases/download/App/Lunera_Beta_Setup.exe'
 };
