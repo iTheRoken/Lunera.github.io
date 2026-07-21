@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07110e">
+    <meta name="description" content="Lunera es un reproductor de música para Windows: buscá, organizá y escuchá tu música a tu manera.">
+    <title>Lunera — Tu música, tu universo</title>
+    <link rel="icon" href="assets/logo2.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-glow glow-one" aria-hidden="true"></div>
+    <div class="page-glow glow-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Lunera, ir al inicio">
+        <img src="assets/logo2.png" alt="" width="40" height="40">
+        <span>Lunera</span>
+        <small>Beta 1.2.0</small>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="sr-only">Abrir menú</span>
+        <i></i><i></i><i></i>
+      </button>
+      <nav id="site-navigation" class="site-nav" aria-label="Navegación principal">
+        <a href="#funciones">Funciones</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#instalar">Descargar</a>
+      </nav>
+      <a class="header-download button button-small" data-download href="downloads/Lunera%20Beta%20Setup.exe" download>Descargar para Windows</a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Reproductor de música para Windows</div>
+          <h1>Tu música.<br><em>Tu universo.</em></h1>
+          <p class="hero-lead">Lunera reúne búsqueda, biblioteca, playlists y controles de audio en un reproductor pensado para que escuchar vuelva a sentirse personal.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" data-download href="downloads/Lunera%20Beta%20Setup.exe" download>
+              <span class="windows-mark" aria-hidden="true"><b></b><b></b><b></b><b></b></span>
+              Descargar Lunera
+            </a>
+            <a class="button button-ghost" href="#funciones">Conocé sus funciones <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Información de descarga">
+            <span><i class="check">✓</i> Windows 10 y 11</span>
+            <span><i class="check">✓</i> 64 bits</span>
+            <span><i class="check">✓</i> Beta 1.2.0</span>
+          </div>
+        </div>
+
+        <div class="app-stage" aria-label="Vista previa ilustrada de la interfaz de Lunera">
+          <div class="orbit orbit-a" aria-hidden="true"></div>
+          <div class="orbit orbit-b" aria-hidden="true"></div>
+          <div class="app-window">
+            <div class="window-topbar">
+              <div class="window-lights"><span></span><span></span><span></span></div>
+              <div class="window-title">Lunera</div>
+              <div class="window-controls"><i></i><i></i></div>
+            </div>
+            <div class="window-layout">
+              <aside class="mock-sidebar">
+                <div class="mock-brand"><img src="assets/logo2.png" alt=""><span>Lunera</span></div>
+                <div class="mock-nav active"><b>⌂</b> Inicio</div>
+                <div class="mock-nav"><b>⌕</b> Buscar</div>
+                <div class="mock-nav"><b>▤</b> Tu Biblioteca</div>
+                <div class="mock-nav"><b>♫</b> Mi Música</div>
+                <div class="mock-nav"><b>⚙</b> Configuración</div>
+              </aside>
+              <div class="mock-main">
+                <div class="mock-heading">
+                  <div><span>Lunera Home</span><strong>Tu música, lista para continuar.</strong></div>
+                  <button type="button" tabindex="-1">Buscar música</button>
+                </div>
+                <div class="mock-summary">
+                  <div class="summary-copy"><span>REPRODUCIENDO AHORA</span><strong>Frecuencia nocturna</strong><small>Tu sesión, a tu ritmo</small></div>
+                  <div class="wave-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+                <div class="mock-section-title"><span>Continuar</span><strong>Reproducido recientemente</strong></div>
+                <div class="mock-cards">
+                  <div class="track-card track-one"><i>01</i><span>Señales</span></div>
+                  <div class="track-card track-two"><i>02</i><span>Horizonte</span></div>
+                  <div class="track-card track-three"><i>03</i><span>Latido</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mock-player">
+              <div class="cover-art"><span>◢</span></div>
+              <div class="playing-copy"><strong>Frecuencia nocturna</strong><span>En tu biblioteca</span></div>
+              <div class="player-actions"><b>↶</b><b class="play-circle">▶</b><b>↷</b></div>
+              <div class="player-line"><span></span></div>
+              <div class="volume">⌁ <i></i></div>
+            </div>
+          </div>
+          <div class="floating-chip chip-a"><span class="chip-icon">♫</span><span><b>Ecualizador Pro</b><small>10 bandas</small></span></div>
+          <div class="floating-chip chip-b"><span class="chip-icon sparkle">✦</span><span><b>Tu ambiente</b><small>Color y visualizador</small></span></div>
+        </div>
+      </section>
+
+      <section id="funciones" class="features section-shell">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> Hecho para escuchar mejor</div>
+          <h2>Todo lo que necesitás,<br>sin perder el ritmo.</h2>
+          <p>Desde descubrir una canción hasta volver a ella días después, Lunera cuida cada momento de tu escucha.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-search">
+            <div class="feature-icon">⌕</div>
+            <span class="card-kicker">Descubrí</span>
+            <h3>Buscá y reproducí</h3>
+            <p>Encontrá canciones, artistas y playlists online desde una búsqueda clara y rápida.</p>
+            <div class="mini-search" aria-hidden="true"><span>Buscar música...</span><b>⌕</b></div>
+          </article>
+          <article class="feature-card feature-library">
+            <div class="feature-icon">▤</div>
+            <span class="card-kicker">Organizá</span>
+            <h3>Tu biblioteca, a tu manera</h3>
+            <p>Guardá favoritos, armá playlists y cargá tus propios archivos de música.</p>
+            <div class="library-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="feature-card feature-sound">
+            <div class="feature-icon">⌁</div>
+            <span class="card-kicker">Ajustá</span>
+            <h3>Sonido con detalle</h3>
+            <p>Elegí la calidad de streaming, ecualizá 10 bandas y usá presets para cada estilo.</p>
+            <div class="equalizer-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="feature-card feature-playback">
+            <div class="feature-icon">▷</div>
+            <span class="card-kicker">Continuá</span>
+            <h3>El reproductor sigue con vos</h3>
+            <p>Cola, aleatorio, repetición, recomendaciones, letras y minirreproductor cuando lo necesitás.</p>
+            <div class="playback-control" aria-hidden="true"><b>↶</b><i>▶</i><b>↷</b></div>
+          </article>
+          <article class="feature-card feature-personalize">
+            <div class="feature-icon">✦</div>
+            <span class="card-kicker">Personalizá</span>
+            <h3>Que se vea como se siente</h3>
+            <p>Temas, color de acento, efectos, visualizador y un modo de interfaz más compacto.</p>
+            <div class="color-pills" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="feature-card feature-control">
+            <div class="feature-icon">⌘</div>
+            <span class="card-kicker">Conservá</span>
+            <h3>Control y continuidad</h3>
+            <p>Historial, caché de audio, atajos, inicio automático y respaldo de configuraciones.</p>
+            <div class="shortcut-keys" aria-hidden="true"><b>Ctrl</b><span>+</span><b>Space</b></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experiencia" class="experience section-shell">
+        <div class="experience-panel">
+          <div class="experience-copy">
+            <div class="eyebrow"><span></span> Tu sesión, sin interrupciones</div>
+            <h2>Volvé a la música<br>que dejaste sonando.</h2>
+            <p>Lunera recuerda tus recientes, mantiene tu colección accesible y te ayuda a encontrar el próximo tema con recomendaciones y una cola flexible.</p>
+            <ul>
+              <li><i>01</i><span><b>Retomá en un instante</b>Recientes, favoritos y playlists siempre a mano.</span></li>
+              <li><i>02</i><span><b>Escuchá a tu ritmo</b>Volumen, normalización, repetición y aleatorio bajo tu control.</span></li>
+              <li><i>03</i><span><b>Hacé lugar a lo tuyo</b>Sumá tus archivos locales a la misma experiencia.</span></li>
+            </ul>
+          </div>
+          <div class="spectrum-card">
+            <div class="spectrum-top"><span>SESIÓN ACTIVA</span><i>•••</i></div>
+            <div class="vinyl"><div class="vinyl-grooves"></div><img src="assets/logo2.png" alt="Lunera"></div>
+            <div class="spectrum-song"><div><strong>Todo empieza con play.</strong><span>Lunera para Windows</span></div><b>♡</b></div>
+            <div class="spectrum-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="spectrum-progress"><i></i></div>
+            <div class="spectrum-time"><span>01:24</span><span>03:18</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="instalar" class="download section-shell">
+        <div class="download-aurora" aria-hidden="true"></div>
+        <div class="download-content">
+          <img class="download-logo" src="assets/logo2.png" alt="">
+          <div class="eyebrow centered"><span></span> Disponible para Windows <span></span></div>
+          <h2>Escuchá el universo<br>de <em>Lunera.</em></h2>
+          <p>Descargá la beta, instalala en tu PC y empezá a construir tu propia experiencia musical.</p>
+          <a class="button button-primary button-large" data-download href="downloads/Lunera%20Beta%20Setup.exe" download>
+            <span class="windows-mark" aria-hidden="true"><b></b><b></b><b></b><b></b></span>
+            Descargar Lunera para Windows
+          </a>
+          <div class="download-details"><span>Versión 1.2.0</span><i></i><span>Windows 10/11 · 64 bits</span><i></i><span>Instalador .exe</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="#inicio"><img src="assets/logo2.png" alt="" width="34" height="34"><span>Lunera</span></a>
+      <p>Tu música, tu universo.</p>
+      <span class="footer-beta">BETA 1.2.0</span>
+    </footer>
+
+    <script src="site-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
