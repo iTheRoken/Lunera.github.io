@@ -1,15 +1,13 @@
-/*
- * Configuración de la descarga.
- *
- * Si publicás la web en GitHub Pages, el sitio crea automáticamente el enlace
- * a la última Release de GitHub. Subí allí el instalador con este mismo nombre:
- * "Lunera Beta Setup.exe".
- *
- * Para usar otro alojamiento, pegá el enlace público del instalador en
- * releaseUrl. Si se deja vacío, se usa el archivo de la carpeta downloads.
- */
+/* Les liens directs ont priorité. En GitHub Pages, le dépôt est détecté. */
 window.LUNERA_SITE_CONFIG = {
-  installerName: 'Lunera_Beta_Setup.exe',
-  localInstallerPath: 'downloads/Lunera_Beta_Setup.exe',
-  releaseUrl: 'https://github.com/iTheRoken/Lunera.github.io/releases/download/App/Lunera_Beta_Setup.exe'
+  installerName: 'Lunera-Setup-2.0.0.exe',
+  localInstallerPath: 'downloads/Lunera-Setup-2.0.0.exe',
+  releaseUrl: '',
+  githubRepository: '',
+  android: {
+    installerName: 'Lunera-Mobile.apk',
+    localInstallerPath: 'downloads/Lunera-Mobile.apk',
+    releaseUrl: '',
+    githubRepository: ''
+  }
 };

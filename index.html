@@ -1,202 +1,75 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#07110e">
-    <meta name="description" content="Lunera es un reproductor de música para Windows: buscá, organizá y escuchá tu música a tu manera.">
-    <title>Lunera — Tu música, tu universo</title>
-    <link rel="icon" href="assets/logo2.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="page-glow glow-one" aria-hidden="true"></div>
-    <div class="page-glow glow-two" aria-hidden="true"></div>
-
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Lunera, ir al inicio">
-        <img src="assets/logo2.png" alt="" width="40" height="40">
-        <span>Lunera</span>
-        <small>Beta 1.2.0</small>
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation">
-        <span class="sr-only">Abrir menú</span>
-        <i></i><i></i><i></i>
-      </button>
-      <nav id="site-navigation" class="site-nav" aria-label="Navegación principal">
-        <a href="#funciones">Funciones</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#instalar">Descargar</a>
-      </nav>
-      <a class="header-download button button-small" data-download href="downloads/Lunera%20Beta%20Setup.exe" download>Descargar para Windows</a>
-    </header>
-
-    <main id="inicio">
-      <section class="hero section-shell">
-        <div class="hero-copy">
-          <div class="eyebrow"><span></span> Reproductor de música para Windows</div>
-          <h1>Tu música.<br><em>Tu universo.</em></h1>
-          <p class="hero-lead">Lunera reúne búsqueda, biblioteca, playlists y controles de audio en un reproductor pensado para que escuchar vuelva a sentirse personal.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" data-download href="downloads/Lunera%20Beta%20Setup.exe" download>
-              <span class="windows-mark" aria-hidden="true"><b></b><b></b><b></b><b></b></span>
-              Descargar Lunera
-            </a>
-            <a class="button button-ghost" href="#funciones">Conocé sus funciones <span aria-hidden="true">↓</span></a>
-          </div>
-          <div class="hero-meta" aria-label="Información de descarga">
-            <span><i class="check">✓</i> Windows 10 y 11</span>
-            <span><i class="check">✓</i> 64 bits</span>
-            <span><i class="check">✓</i> Beta 1.2.0</span>
-          </div>
-        </div>
-
-        <div class="app-stage" aria-label="Vista previa ilustrada de la interfaz de Lunera">
-          <div class="orbit orbit-a" aria-hidden="true"></div>
-          <div class="orbit orbit-b" aria-hidden="true"></div>
-          <div class="app-window">
-            <div class="window-topbar">
-              <div class="window-lights"><span></span><span></span><span></span></div>
-              <div class="window-title">Lunera</div>
-              <div class="window-controls"><i></i><i></i></div>
-            </div>
-            <div class="window-layout">
-              <aside class="mock-sidebar">
-                <div class="mock-brand"><img src="assets/logo2.png" alt=""><span>Lunera</span></div>
-                <div class="mock-nav active"><b>⌂</b> Inicio</div>
-                <div class="mock-nav"><b>⌕</b> Buscar</div>
-                <div class="mock-nav"><b>▤</b> Tu Biblioteca</div>
-                <div class="mock-nav"><b>♫</b> Mi Música</div>
-                <div class="mock-nav"><b>⚙</b> Configuración</div>
-              </aside>
-              <div class="mock-main">
-                <div class="mock-heading">
-                  <div><span>Lunera Home</span><strong>Tu música, lista para continuar.</strong></div>
-                  <button type="button" tabindex="-1">Buscar música</button>
-                </div>
-                <div class="mock-summary">
-                  <div class="summary-copy"><span>REPRODUCIENDO AHORA</span><strong>Frecuencia nocturna</strong><small>Tu sesión, a tu ritmo</small></div>
-                  <div class="wave-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                </div>
-                <div class="mock-section-title"><span>Continuar</span><strong>Reproducido recientemente</strong></div>
-                <div class="mock-cards">
-                  <div class="track-card track-one"><i>01</i><span>Señales</span></div>
-                  <div class="track-card track-two"><i>02</i><span>Horizonte</span></div>
-                  <div class="track-card track-three"><i>03</i><span>Latido</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="mock-player">
-              <div class="cover-art"><span>◢</span></div>
-              <div class="playing-copy"><strong>Frecuencia nocturna</strong><span>En tu biblioteca</span></div>
-              <div class="player-actions"><b>↶</b><b class="play-circle">▶</b><b>↷</b></div>
-              <div class="player-line"><span></span></div>
-              <div class="volume">⌁ <i></i></div>
-            </div>
-          </div>
-          <div class="floating-chip chip-a"><span class="chip-icon">♫</span><span><b>Ecualizador Pro</b><small>10 bandas</small></span></div>
-          <div class="floating-chip chip-b"><span class="chip-icon sparkle">✦</span><span><b>Tu ambiente</b><small>Color y visualizador</small></span></div>
-        </div>
-      </section>
-
-      <section id="funciones" class="features section-shell">
-        <div class="section-heading">
-          <div class="eyebrow"><span></span> Hecho para escuchar mejor</div>
-          <h2>Todo lo que necesitás,<br>sin perder el ritmo.</h2>
-          <p>Desde descubrir una canción hasta volver a ella días después, Lunera cuida cada momento de tu escucha.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card feature-search">
-            <div class="feature-icon">⌕</div>
-            <span class="card-kicker">Descubrí</span>
-            <h3>Buscá y reproducí</h3>
-            <p>Encontrá canciones, artistas y playlists online desde una búsqueda clara y rápida.</p>
-            <div class="mini-search" aria-hidden="true"><span>Buscar música...</span><b>⌕</b></div>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101512">
+  <meta name="description" content="Dale lugar a tu música. Descubrí Lunera para Windows: biblioteca, playlists, archivos locales y una experiencia que se siente tuya. Tambi&eacute;n en Android.">
+  <title>Lunera. — Dale lugar a tu música</title>
+  <link rel="icon" href="assets/lunera-moon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/lunera-moon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header shell">
+    <a class="brand" href="#inicio" aria-label="Lunera, inicio"><img src="assets/lunera-moon.svg" width="38" height="38" alt=""><span>Lunera<span class="brand-dot">.</span></span></a>
+    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span></button>
+    <nav id="site-navigation" aria-label="Principal"><a href="#experiencia">La experiencia</a><a href="#funciones">A tu manera</a><a href="#preguntas">Preguntas</a></nav>
+    <a class="button header-cta" href="#descargar">Descargar <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="contenido">
+    <section class="hero shell" id="inicio">
+      <div class="hero-top"><span class="eyebrow"><i></i> MENOS RUIDO. MÁS MÚSICA.</span><span class="hero-edition">WINDOWS + ANDROID</span></div>
+      <div class="hero-heading"><h1>Dale lugar<br>a tu <em>música.</em></h1><div class="hero-aside"><p>Esos temas que repetís.<br>Los que todavía no conocés.<br>Un lugar para todos.</p><a class="text-link" href="#experiencia">Entrá en tu universo <span aria-hidden="true">↓</span></a></div></div>
+      <div class="hero-bottom hero-downloads"><div class="hero-platform"><a class="button primary" data-download="windows" href="downloads/Lunera-Setup-1.8.0.exe" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l8-1v8H3zm10-1.3L22 2v10h-9zM3 14h8v8l-8-1zm10 0h9v10l-9-1.7z"/></svg>Descargar para Windows <span aria-hidden="true">&#8599;</span></a><span class="platform-note">Windows 10 / 11 &middot; 64 bits</span></div><div class="hero-platform"><a class="button android-primary" data-download="android" href="downloads/Lunera-Mobile.apk" download><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4M11 19h2"/></svg>Descargar para Android <span aria-hidden="true">&#8599;</span></a><span class="platform-note">Android 8.0 o posterior &middot; APK</span></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="moon-disc"><img src="assets/lunera-moon.svg" alt=""></div><span class="art-label">EN TU PROPIA ÓRBITA</span><span class="art-number">L / 01</span><div class="art-bars"></div><span class="art-caption">Un pequeño universo.<br>Una canción a la vez.</span></div>
+    </section>
+    <div class="chapter-bar shell"><span>01 — LA EXPERIENCIA</span><span>DISEÑADO ALREDEDOR DE LO QUE ESCUCHÁS</span></div>
+    <section id="experiencia" class="experience shell section-space">
+      <div class="section-title reveal"><span class="eyebrow">TODO EN SU LUGAR</span><h2>Tu próxima canción.<br>Tu próximo <em>momento.</em></h2><p>Buscá, guardá y volvé a lo que te mueve. Sin perderte entre ventanas.</p></div>
+      <div class="product-frame screenshot-frame reveal">
+        <div class="preview-toolbar"><span class="preview-label"><i></i> CONOC&Eacute; LUNERA</span><div class="preview-tabs" role="tablist" aria-label="Capturas de Lunera"><button id="tab-windows" role="tab" aria-selected="true" aria-controls="capture-windows" data-view="windows">Windows</button><button id="tab-artistas" role="tab" aria-selected="false" aria-controls="capture-artistas" data-view="artistas" tabindex="-1">Artistas locales</button><button id="tab-android" role="tab" aria-selected="false" aria-controls="capture-android" data-view="android" tabindex="-1">Android</button></div><span class="preview-hint">CAPTURAS REALES</span></div>
+        <figure id="capture-windows" class="screenshot-panel" role="tabpanel" aria-labelledby="tab-windows"><a href="assets/screenshots/windows-inicio.png" target="_blank" rel="noopener" aria-label="Ampliar captura de Lunera en Windows"><img src="assets/screenshots/windows-inicio.png" width="1440" height="960" alt="Inicio real de Lunera en Windows, con acceso a biblioteca, artistas locales y controles de reproducci&oacute;n." loading="lazy"></a><figcaption>Tu espacio de escucha en Windows. <span>Abr&iacute; la captura para verla en detalle &#8599;</span></figcaption></figure>
+        <figure id="capture-artistas" class="screenshot-panel" role="tabpanel" aria-labelledby="tab-artistas" hidden><a href="assets/screenshots/windows-artistas.png" target="_blank" rel="noopener" aria-label="Ampliar captura de artistas locales"><img src="assets/screenshots/windows-artistas.png" width="1440" height="960" alt="Panel real de artistas locales de Lunera con Luk1 y Flawers A." loading="lazy"></a><figcaption>Un lugar para las voces que est&aacute;n creciendo. <span>Artistas locales en Lunera &#8599;</span></figcaption></figure>
+        <div id="capture-android" class="screenshot-panel android-screenshots" role="tabpanel" aria-labelledby="tab-android" hidden><div class="phone-gallery"><figure><a href="assets/screenshots/android-inicio.png" target="_blank" rel="noopener" aria-label="Ampliar inicio de Android"><img src="assets/screenshots/android-inicio.png" width="1082" height="2402" alt="Pantalla real de inicio de Lunera Mobile con favoritos, canciones recientes y artistas locales." loading="lazy"></a><figcaption>Tu universo, en el bolsillo.</figcaption></figure><figure><a href="assets/screenshots/android-reproductor.png" target="_blank" rel="noopener" aria-label="Ampliar reproductor de Android"><img src="assets/screenshots/android-reproductor.png" width="1082" height="2402" alt="Reproductor real de Lunera Mobile con portada y controles de la canci&oacute;n." loading="lazy"></a><figcaption>Un tema m&aacute;s, donde est&eacute;s.</figcaption></figure></div></div>
+      </div>
+      <p class="preview-footnote">Capturas reales de Lunera para Windows y Android. Toc&aacute; una imagen para ampliarla.</p>
+    </section>
+    <section class="features shell section-space" id="funciones">
+      <div class="section-title reveal"><span class="eyebrow">SIN CAMBIAR TU RITMO</span><h2>Muy tuyo.<br>Muy <em>Lunera.</em></h2></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-collection reveal"><span class="feature-index">01 / TU COLECCIÓN</span><div class="stack-art" aria-hidden="true"><i></i><i></i><i>♡</i></div><h3>Hay canciones<br>que se quedan.</h3><p>Favoritos, playlists y archivos locales. Organizá lo que escuchás y encontralo cuando lo necesitás.</p></article>
+        <article class="feature-card feature-color reveal"><span class="feature-index">02 / TU AMBIENTE</span><div class="color-art" aria-hidden="true"><span> Aa<span>.</span></span><i></i></div><h3>El mismo tema.<br>Tu propia vibra.</h3><p>Temas, colores y visualizadores para que Lunera se sienta como parte de tu espacio.</p><div class="swatches" role="group" aria-label="Probar un color de la tarjeta"><button data-color="mint" aria-label="Menta" aria-pressed="true"></button><button data-color="lilac" aria-label="Lila" aria-pressed="false"></button><button data-color="peach" aria-label="Durazno" aria-pressed="false"></button></div></article>
+        <article class="feature-card feature-mini reveal"><span class="feature-index">03 / TU COMPAÑÍA</span><div class="mini-art" aria-hidden="true"><img src="assets/lunera-moon.svg" alt=""><span>Un tema más<small>Lunera.</small></span><b>Ⅱ</b></div><h3>Vos seguí.<br>La música también.</h3><p>Minirreproductor, cola de reproducción y controles a mano. Un buen soundtrack para lo que estés haciendo.</p></article>
+      </div>
+    </section>
+    <section class="manifesto shell reveal"><span class="eyebrow">UNA APP CON IDENTIDAD PROPIA</span><p>No es solo lo que escuchás.<br>Es cómo te <em>hace sentir.</em></p><div><img src="assets/lunera-moon.svg" width="40" height="40" alt=""><span>Hecho con cariño.<br>Para quienes viven con música.</span></div></section>
+    <section id="preguntas" class="faq shell section-space"><div class="section-title reveal"><span class="eyebrow">ANTES DE DARLE PLAY</span><h2>Todo <em>claro.</em></h2></div><div class="faq-list reveal"><details><summary>¿Dónde puedo usar Lunera?<span aria-hidden="true">+</span></summary><p>Pod&eacute;s usar Lunera en Windows 10 y 11 de 64 bits, o Lunera Mobile en Android 8.0 o posterior. Eleg&iacute; tu plataforma en la secci&oacute;n de descargas.</p></details><details><summary>¿Puedo escuchar mis propios archivos?<span aria-hidden="true">+</span></summary><p>Sí. Podés sumar música local a tu colección, organizarla en playlists y tener tus favoritos a mano.</p></details><details><summary>¿Cómo se instala?<span aria-hidden="true">+</span></summary><p>En Windows, abr&iacute; el instalador .exe y segu&iacute; los pasos. En Android, descarg&aacute; y abr&iacute; el APK en tu tel&eacute;fono. Si Android lo solicita, permit&iacute; la instalaci&oacute;n desde el navegador o gestor de archivos que est&eacute;s usando.</p></details><details><summary>¿Puedo cambiar cómo se ve?<span aria-hidden="true">+</span></summary><p>Sí. Desde Configuración podés elegir la interfaz, los colores y los efectos visuales. También podés reducir las animaciones.</p></details></div></section>
+    <section class="download-section" id="descargar">
+      <div class="shell download-inner reveal">
+        <div class="download-heading"><img src="assets/lunera-moon.svg" width="96" height="96" alt=""><h2>Tu m&uacute;sica.<br>Donde <em>est&eacute;s.</em></h2></div>
+        <p class="download-intro">En tu escritorio o en tu bolsillo.<br>Eleg&iacute; d&oacute;nde empieza tu pr&oacute;xima canci&oacute;n.</p>
+        <div class="platform-downloads">
+          <article class="platform-card">
+            <div class="platform-card-top"><span class="platform-symbol" aria-hidden="true">&#8862;</span><span class="platform-format">ESCRITORIO / .EXE</span></div>
+            <h3>Lunera para Windows<span class="brand-dot">.</span></h3>
+            <p>Un universo musical en tu PC. Tu colecci&oacute;n, tus playlists y tu propio ambiente.</p>
+            <a class="button primary" data-download="windows" href="downloads/Lunera-Setup-1.8.0.exe" download>Descargar para Windows <span aria-hidden="true">&#8595;</span></a>
+            <span class="platform-note">Windows 10 / 11 &middot; 64 bits &middot; 404 MB</span>
           </article>
-          <article class="feature-card feature-library">
-            <div class="feature-icon">▤</div>
-            <span class="card-kicker">Organizá</span>
-            <h3>Tu biblioteca, a tu manera</h3>
-            <p>Guardá favoritos, armá playlists y cargá tus propios archivos de música.</p>
-            <div class="library-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="feature-card feature-sound">
-            <div class="feature-icon">⌁</div>
-            <span class="card-kicker">Ajustá</span>
-            <h3>Sonido con detalle</h3>
-            <p>Elegí la calidad de streaming, ecualizá 10 bandas y usá presets para cada estilo.</p>
-            <div class="equalizer-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="feature-card feature-playback">
-            <div class="feature-icon">▷</div>
-            <span class="card-kicker">Continuá</span>
-            <h3>El reproductor sigue con vos</h3>
-            <p>Cola, aleatorio, repetición, recomendaciones, letras y minirreproductor cuando lo necesitás.</p>
-            <div class="playback-control" aria-hidden="true"><b>↶</b><i>▶</i><b>↷</b></div>
-          </article>
-          <article class="feature-card feature-personalize">
-            <div class="feature-icon">✦</div>
-            <span class="card-kicker">Personalizá</span>
-            <h3>Que se vea como se siente</h3>
-            <p>Temas, color de acento, efectos, visualizador y un modo de interfaz más compacto.</p>
-            <div class="color-pills" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="feature-card feature-control">
-            <div class="feature-icon">⌘</div>
-            <span class="card-kicker">Conservá</span>
-            <h3>Control y continuidad</h3>
-            <p>Historial, caché de audio, atajos, inicio automático y respaldo de configuraciones.</p>
-            <div class="shortcut-keys" aria-hidden="true"><b>Ctrl</b><span>+</span><b>Space</b></div>
+          <article class="platform-card android-card" id="descarga-android">
+            <div class="platform-card-top"><svg class="platform-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4M11 19h2"/></svg><span class="platform-format">MOBILE / .APK</span></div>
+            <h3>Lunera para Android<span class="brand-dot">.</span></h3>
+            <p>Llev&aacute; tu m&uacute;sica con vos. La identidad de Lunera, pensada para tu tel&eacute;fono.</p>
+            <a class="button primary" data-download="android" href="downloads/Lunera-Mobile.apk" download>Descargar para Android <span aria-hidden="true">&#8595;</span></a>
+            <span class="platform-note">Android 8.0 o posterior &middot; APK &middot; 55 MB</span>
+            <small class="apk-help">Abr&iacute; el APK en tu tel&eacute;fono para instalarlo. Android puede pedirte permiso para instalar desde tu navegador.</small>
           </article>
         </div>
-      </section>
-
-      <section id="experiencia" class="experience section-shell">
-        <div class="experience-panel">
-          <div class="experience-copy">
-            <div class="eyebrow"><span></span> Tu sesión, sin interrupciones</div>
-            <h2>Volvé a la música<br>que dejaste sonando.</h2>
-            <p>Lunera recuerda tus recientes, mantiene tu colección accesible y te ayuda a encontrar el próximo tema con recomendaciones y una cola flexible.</p>
-            <ul>
-              <li><i>01</i><span><b>Retomá en un instante</b>Recientes, favoritos y playlists siempre a mano.</span></li>
-              <li><i>02</i><span><b>Escuchá a tu ritmo</b>Volumen, normalización, repetición y aleatorio bajo tu control.</span></li>
-              <li><i>03</i><span><b>Hacé lugar a lo tuyo</b>Sumá tus archivos locales a la misma experiencia.</span></li>
-            </ul>
-          </div>
-          <div class="spectrum-card">
-            <div class="spectrum-top"><span>SESIÓN ACTIVA</span><i>•••</i></div>
-            <div class="vinyl"><div class="vinyl-grooves"></div><img src="assets/logo2.png" alt="Lunera"></div>
-            <div class="spectrum-song"><div><strong>Todo empieza con play.</strong><span>Lunera para Windows</span></div><b>♡</b></div>
-            <div class="spectrum-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="spectrum-progress"><i></i></div>
-            <div class="spectrum-time"><span>01:24</span><span>03:18</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="instalar" class="download section-shell">
-        <div class="download-aurora" aria-hidden="true"></div>
-        <div class="download-content">
-          <img class="download-logo" src="assets/logo2.png" alt="">
-          <div class="eyebrow centered"><span></span> Disponible para Windows <span></span></div>
-          <h2>Escuchá el universo<br>de <em>Lunera.</em></h2>
-          <p>Descargá la beta, instalala en tu PC y empezá a construir tu propia experiencia musical.</p>
-          <a class="button button-primary button-large" data-download href="downloads/Lunera%20Beta%20Setup.exe" download>
-            <span class="windows-mark" aria-hidden="true"><b></b><b></b><b></b><b></b></span>
-            Descargar Lunera para Windows
-          </a>
-          <div class="download-details"><span>Versión 1.2.0</span><i></i><span>Windows 10/11 · 64 bits</span><i></i><span>Instalador .exe</span></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer section-shell">
-      <a class="brand" href="#inicio"><img src="assets/logo2.png" alt="" width="34" height="34"><span>Lunera</span></a>
-      <p>Tu música, tu universo.</p>
-      <span class="footer-beta">BETA 1.2.0</span>
-    </footer>
-
-    <script src="site-config.js"></script>
-    <script src="script.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="#inicio"><img src="assets/lunera-moon.svg" width="32" height="32" alt=""><span>Lunera<span class="brand-dot">.</span></span></a><p>Hecho con <span class="footer-heart" aria-label="amor">♥</span> por Mateo Luciano Luppoli</p><a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></footer>
+  <script src="site-config.js"></script><script src="script.js"></script>
+</body>
 </html>
