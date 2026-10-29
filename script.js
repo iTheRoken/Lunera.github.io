@@ -3,17 +3,18 @@
   const config = window.LUNERA_SITE_CONFIG || {};
   function getDownloadUrl(platform = 'windows') {
     const target = platform === 'android' ? (config.android || {}) : config;
-    const installerName = target.installerName || (platform === 'android' ? 'Lunera-Mobile.apk' : 'Lunera-Setup-1.8.0.exe');
+    const installerName = target.installerName || (platform === 'android' ? 'Lunera-Mobile.apk' : 'Lunera-Setup-2.0.0.exe');
     if (target.releaseUrl) return target.releaseUrl;
     const { hostname, pathname } = window.location;
     let repository = target.githubRepository || config.githubRepository;
     if (!repository && hostname.endsWith('.github.io')) {
       const owner = hostname.split('.')[0];
       const project = pathname.split('/').filter(Boolean)[0];
-      repository = `${owner}/${project && !project.includes('.') ? project : `${owner}.github.io`}`;
+      repository = `${owner}/${project && project !== 'index.html' ? project : `${owner}.github.io`}`;
     }
     if (repository && /^[\w.-]+\/[\w.-]+$/.test(repository)) {
-      return `https://github.com/${repository}/releases/latest/download/${encodeURIComponent(installerName)}`;
+      const releasePath = target.releaseTag ? `download/${encodeURIComponent(target.releaseTag)}` : 'latest/download';
+      return `https://github.com/${repository}/releases/${releasePath}/${encodeURIComponent(installerName)}`;
     }
     return target.localInstallerPath || `downloads/${encodeURIComponent(installerName)}`;
   }
